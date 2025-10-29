@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline';">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Meeting Scheduler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#4f46e5',
+                light: '#6366f1',
+                dark: '#4338ca',
+              },
+              secondary: {
+                DEFAULT: '#10b981',
+                light: '#34d399',
+                dark: '#059669',
+              },
+              light: {
+                bg: '#f9fafb',
+                card: '#ffffff',
+                text: '#111827',
+                border: '#e5e7eb',
+              },
+              dark: {
+                bg: '#111827',
+                card: '#1f2937',
+                text: '#f9fafb',
+                border: '#374151',
+              }
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light-bg dark:bg-dark-bg transition-colors duration-300">
+    <div id="root"></div>
+    <script src="dist/bundle.js"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

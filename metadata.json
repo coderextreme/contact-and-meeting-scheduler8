@@ -1,0 +1,5 @@
+{
+  "name": "Contact & Meeting Scheduler",
+  "description": "A local-first web application to manage contacts and schedule meetings, enhanced with AI-powered email invitation generation. All data is stored privately in your browser.",
+  "requestFramePermissions": []
+}
